@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Task-1</title>
+        <link rel="stylesheet" href="styles.css">
+        <script> var exports = {}; </script>
+        <script src="./contacts.js" type="module" defer ></script>
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="page-header">
+                <div class="page-title">
+                    Address Book
+                </div>
+            </div>
+            <div class="nav-bar">
+                <div class="nav-menu">
+                    <ul class="nav-menu-items">
+                        <li class="nav-menu-item"><a class="nav-links" href="#">home</a></li>
+                        <li class="nav-menu-item" id="add-btn"><a class="nav-links" href="#">+ add</a></li>
+                    </ul>
+                </div>
+                <div class="blog-img">
+                        <img class="blog-logo" src="blog-icon.png" alt="blog">
+                </div>
+            </div>
+            <div class="contact-section">CONTACTS</div>
+            <div class="contact-list" id="contact-list">
+                        <!--         details inserted here                -->
+            </div>
+            <div class="formdetails" id="formdetails">
+                <form id="contact_form">
+                    <table class="form-table">
+                        <tr><td>Name</td></tr>
+                        <tr><td colspan="2"><input type="text" class="span-col" id="contact-name" maxlength="30"></td></tr>
+                        <tr><td><span id="warning-name"></span></td></tr>
+                        <tr><td>Email</td></tr>
+                        <tr><td colspan="2"><input type="text" class="span-col" id="contact-email" ></td></tr>
+                        <tr><td><span id="warning-email"></span></td></tr>
+                        <tr>
+                            <td>mobile</td>
+                            <td class="span-landline">landline</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="span-phone" id="contact-phone" maxlength="12"></td>
+                            <td><input type="text" class="span-landline" id="contact-landline"></td>
+                        </tr>
+                        <tr><td><span id="warning-phone"></span></td></tr>
+                        <tr><td>website</td></tr>
+                        <tr><td colspan="2"><input type="text" class="span-col" id="contact-website"></td></tr>
+                        <tr><td>Address</td></tr>
+                        <tr><td colspan="2" ><textarea class="span-col-textarea" id="contact-address"></textarea></td></tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><button type="button" id="form-save-btn">save changes</button><button id="form-add-btn" type="button">Add</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="details-title" id="details-title">
+                <div class="user-details">
+                    <div id="insertName"></div>
+                    <div class="options">
+                        <div class="edit-img"><img src="./edit1.jpg" alt="" class="edit-icon">Edit</div>
+                        <div class="delete-img"><img src="./delete1.png" alt="" class="delete-icon">Delete</div>
+                    </div>
+                    </div>
+                <ul class="user-details-list">
+                    <li class="user-email" id="user-email"></li>
+                    <li class="user-phone" id="user-phone"></li>
+                    <li class="user-landline" id="user-landline"></li>
+                    <li class="user-website" id="user-website"></li>
+                    <li class="user-address"><div>Address: </div> <span id="user-address"></span></li>
+                </ul>
+            </div>
+        </div>
+       
+    </body>
+</html>

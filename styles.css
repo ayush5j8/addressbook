@@ -1,0 +1,375 @@
+@font-face {
+    font-family: 'Century Gothic'; /*a name to be used later*/
+    src: url('http://domain.example/fonts/font.ttf'); /*URL to font*/
+}
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    margin: 0px;
+}
+.page-header{
+    background-color: rgb(51, 153, 204);
+    color: white;
+    text-transform: uppercase;
+    padding: 19px 10px;
+    align-items: center;
+    display: flex;
+}
+.page-title{
+    font-family: Century Gothic;
+    font-weight: normal;
+    font-size: 40px;
+    margin-left: 10px;
+}
+.nav-bar{
+    background-color: rgb(51, 51, 51);
+    height: 28px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 12px;
+}
+.nav-menu-items{
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    
+}
+.nav-menu-item{
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+}
+.nav-links{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding-top: 6px;
+}
+.nav-links :hover{
+    color: black;
+}
+
+.nav-menu-item:hover{
+    background-color: #FF9900;
+    border-left: 4px solid white;
+}
+.nav-menu-item:hover a{
+    color: black;
+}
+.nav-menu-item-visited{
+    background-color: #FF9900;
+    border-left: 4px solid white;
+    padding-left: 4px;
+    padding-right: 4px;
+    height: 100%;
+}
+.blog-img{
+    margin-right: 25px;
+}
+.blog-logo{
+    width: 19px;
+    height:19px
+}
+.news-container{
+    border:1px solid rgb(215, 215, 215) ;
+    width: 650px;
+    margin-left: 45px;
+    margin-top: 16px;
+}
+.news-title{
+    margin-left: 10px;
+    margin-bottom: 0px;
+    font-family: Century Gothic;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 8px;
+}
+.news-items{
+    list-style-type: "-  ";
+    line-height: 2.2;
+    font-size: 12px;
+    margin-top: 0px;
+    padding-left: 28px;
+    font-family: Arial;
+}
+.welcome-container{
+    margin-top: 0px;
+    margin-left: 45px;
+    max-width: 900px;
+}
+.welcome-title{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: bold;
+}
+.welcome-msg{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    margin-top: 6px;
+    line-height: 1.2;
+}
+.careers-title{
+    font-size: 24px;
+    font-family: 'Didact Gothic', sans-serif;
+    padding: 20px 45px;
+}
+.careers-description{
+    padding: 0px 50px;
+    font-size: 13px;
+    width: 780px;
+}
+.description{
+    margin-top: 0px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.form tr,.form button{
+    font-weight: bold;
+    font-size: 14px;
+}
+.key{
+    padding: 15px 60px;
+}
+.browse{
+    height: 25px;
+    width: 100px;
+    display: none;
+}
+.browse-borders{
+    margin-left: 10px;
+    border: 1px solid black;
+    padding: 3px 15px;
+    background-color: #EEEEEE;
+}
+.name,.email,.role,.resume{
+    height: 25px;
+    width: 140px;
+}
+.submit{
+    height: 25px;
+    width: 80px;
+    margin-top: 8px;
+}
+.contact-form{
+    width: 600px;
+    margin:10px auto;
+    font-size: 13px;
+    
+}
+#StateorProvince{
+    width: 150px;
+    height: 24px;
+    font-size: 11.5px;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+}
+.span-italic{
+    font-style: italic;
+}
+.about-organisation,.query-to-know{
+    overflow-y: scroll;
+    width: 300px;
+    height: 95px;
+    resize: none;
+}
+.options{
+    margin-top: 8px;
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form td,.contact p{
+    font-size: 12px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+}
+.my-name,.my-email,.my-phone,.my-org,.my-city,.promocode,.my-webAddr{
+    width: 150px;
+    height: 25px;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+}
+.contact{
+    padding-left: 20px;
+}
+
+.form-info{
+    font-size: 14px;
+    color: red;
+    margin-left: 20px;
+}
+.careers-info{
+    font-size: 14px;
+    color: red;
+    margin-left: 50px;
+}
+#err-name, #err-mail,#reqd-name,#reqd-email,#reqd-phone,#reqd-org{
+    color: red;
+}
+.reqd{
+    color:red;
+    margin-left: 5px;
+}
+.contact-section{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 20px;
+}
+.formdetails{
+    float: right;
+    padding: 25px;
+    border: 1px solid black;
+    margin-right: 100px;
+    box-shadow: 0px 0px 20px 0px black;
+    position: absolute;
+    top: 160px;
+    left: 600px;
+    display: none;
+}
+
+#form-add-btn{
+    background-color: rgb(41, 122, 41);
+    color: white;
+    border: none;
+    font-size: 10px;
+    width: 80px;
+    height: 25px;
+    margin-top: 10px;
+}
+.span-col{
+    width: 100%;
+    height: 25px;
+}
+.span-phone,.span-landline{
+    height: 25px;
+}
+.span-landline{
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.contact-details-list{
+    border: 1px solid black;
+    width: 300px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.details,.namebox{
+    margin: 0px;
+}
+.span-col-textarea{
+    height:80px ;
+    width: 100%;
+    resize: none;
+}
+.namebox{
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+.edit-icon{
+    height: 15px;
+    width: 15px;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    width:110px;
+    align-items: center;
+    margin: 0px;
+}
+.edit-icon,.delete-icon{
+    position: relative;
+    top: 4px;
+}
+.edit-img{
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+.delete-img{
+    cursor: pointer;
+}
+.details-title{
+    
+    width:400px;
+    align-items: center;
+    position: absolute;
+    top: 160px;
+    left: 600px;
+    display: none;
+}
+#insertName{
+    position: relative;
+    top:10px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.user-details{
+    display: flex;
+    justify-content: space-between;
+}
+.user-details-list{
+    padding: 0px;
+}
+.user-details-list li{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+.hidden{
+    margin: 0px;
+    display: none;
+}
+#user-address{
+    display: inline-block;
+    width: 100px;
+    word-wrap: break-word;
+}
+.user-address{
+    display: flex;
+}
+.user-website{
+    margin: 10px 0px;
+}
+.user-phone{
+    margin-top: 10px;
+}
+.user-landline{
+    margin-bottom: 10px;
+}
+#form-save-btn{
+    background-color: rgb(41, 122, 41);
+    color: white;
+    border: none;
+    height: 25px;
+    display: none;
+}
+#warning-name, #warning-email, #warning-phone{
+    font-size: 12px;
+    color: red;
+}
